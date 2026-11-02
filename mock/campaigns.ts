@@ -1,0 +1,141 @@
+import type { Campaign } from "@/lib/types";
+import { IMG } from "./images";
+
+export const campaigns: Campaign[] = [
+  {
+    slug: "one-million-for-the-wall",
+    title: "One Million for the Wall",
+    kicker: "2027 planting season appeal",
+    image: IMG.savannaSunset,
+    summary: "Help us raise and plant one million drought-hardy trees across Jigawa, Sokoto and Yobe before the 2027 rains.",
+    story: [
+      "Every year the Sahara edges a little further south. In the villages around Hadejia, families tell us their grandparents farmed land that is now sand.",
+      "The Great Green Wall is Africa’s answer: a mosaic of restored land stretching 8,000 km across the continent. Nigeria’s 1,500 km stretch runs through eleven states — and it is far from finished.",
+      "This appeal will fund nurseries run by 46 women’s groups, half-moon water-harvesting pits, community guards and two full years of monitoring. Seedlings go into the ground with the first rains of July 2027.",
+    ],
+    raised: 186_420_000,
+    goal: 250_000_000,
+    donors: 6_412,
+    deadline: "2027-03-31",
+    programme: "great-green-wall",
+    site: "jigawa-great-green-wall",
+    budget: [
+      { label: "Nurseries & seedlings", amount: 92_000_000 },
+      { label: "Water-harvesting pits & planting labour", amount: 71_000_000 },
+      { label: "Community guards & replacement planting", amount: 46_000_000 },
+      { label: "Monitoring & verification", amount: 28_000_000 },
+      { label: "Fundraising & admin", amount: 13_000_000 },
+    ],
+    updates: [
+      { date: "2026-10-12", title: "Seed collection complete", body: "Nursery groups in Auyo and Kirikasamma collected 1.4 tonnes of acacia and baobab seed — enough for 1.2m seedlings." },
+      { date: "2026-08-30", title: "Rains came early", body: "We planted 212,000 trees in a five-week window. 6-month survival checks begin in February." },
+      { date: "2026-06-15", title: "Appeal launched", body: "Launched with a ₦40m match from the Sahel Futures Fund — every naira doubled up to that amount." },
+    ],
+    recentDonors: [
+      { name: "Amaka O.", amount: 25_000, when: "12 min ago", note: "For my grandmother’s village in Kano." },
+      { name: "Anonymous", amount: 125_000, when: "1 hr ago" },
+      { name: "Tunde B.", amount: 10_000, when: "3 hrs ago" },
+      { name: "Halima S.", amount: 50_000, when: "yesterday", note: "Plant something that outlives us." },
+      { name: "Kelechi & Ngozi", amount: 250_000, when: "yesterday" },
+    ],
+    suggested: [5_000, 25_000, 125_000],
+  },
+  {
+    slug: "breathe-again-mangroves",
+    title: "Let the Delta Breathe Again",
+    kicker: "Mangrove restoration",
+    image: IMG.aerialForestRiver,
+    summary: "Replant 150 hectares of oil-damaged mangrove creeks in Bayelsa and pay 140 local guardians to protect them.",
+    story: [
+      "Mangroves are the Niger Delta’s lungs and nursery. They shelter the fish that feed millions, shield villages from storm surge and lock away carbon in waterlogged soil.",
+      "With your support, mangrove guardians in Brass and Nembe will plant 375,000 propagules over the next 18 months — and be paid fairly to monitor them.",
+    ],
+    raised: 54_800_000,
+    goal: 90_000_000,
+    donors: 2_118,
+    deadline: "2027-01-31",
+    programme: "mangrove-restoration",
+    site: "bayelsa-mangroves",
+    budget: [
+      { label: "Guardian stipends", amount: 34_000_000 },
+      { label: "Floating nurseries & propagules", amount: 22_000_000 },
+      { label: "Boats, fuel & safety", amount: 16_000_000 },
+      { label: "Blue-carbon soil sampling", amount: 11_000_000 },
+      { label: "Admin", amount: 7_000_000 },
+    ],
+    updates: [
+      { date: "2026-09-20", title: "Second floating nursery afloat", body: "Built from recycled drums by the Twon-Brass co-op — it holds 40,000 propagules." },
+      { date: "2026-07-02", title: "Hydrology survey done", body: "Mapped 150 ha of plantable mudflat at the right tidal height." },
+    ],
+    recentDonors: [
+      { name: "Ebi T.", amount: 12_500, when: "40 min ago", note: "From Yenagoa with love." },
+      { name: "Anonymous", amount: 50_000, when: "5 hrs ago" },
+      { name: "Chioma A.", amount: 25_000, when: "2 days ago" },
+    ],
+    suggested: [12_500, 37_500, 100_000],
+  },
+  {
+    slug: "cookstoves-for-kano",
+    title: "5,000 Stoves for Kano",
+    kicker: "Clean cooking",
+    image: IMG.campfire,
+    summary: "Give 5,000 families efficient stoves that halve firewood use and smoke — before the Harmattan dry season.",
+    story: [
+      "Hauwa cooks three meals a day over an open fire in a room with one small window. Her youngest coughs all through Harmattan.",
+      "A ₦25,000 stove, built by local artisans, halves the wood she needs and channels smoke out of the kitchen. Multiply that by 5,000 families and you protect thousands of hectares of woodland.",
+    ],
+    raised: 71_250_000,
+    goal: 105_000_000,
+    donors: 3_045,
+    deadline: "2026-12-20",
+    programme: "clean-cookstoves",
+    budget: [
+      { label: "Stove fabrication (local artisans)", amount: 62_000_000 },
+      { label: "Distribution & cooking demos", amount: 21_000_000 },
+      { label: "Follow-up visits & usage sensors", amount: 14_000_000 },
+      { label: "Admin", amount: 8_000_000 },
+    ],
+    updates: [
+      { date: "2026-10-01", title: "2,850 stoves delivered", body: "Distribution complete in Ungogo and Dawakin Tofa LGAs." },
+    ],
+    recentDonors: [
+      { name: "Musa D.", amount: 25_000, when: "2 hrs ago" },
+      { name: "Grace E.", amount: 75_000, when: "6 hrs ago", note: "Three stoves for three families." },
+      { name: "Anonymous", amount: 25_000, when: "yesterday" },
+    ],
+    suggested: [25_000, 75_000, 250_000],
+  },
+  {
+    slug: "plastic-free-lagos-2026",
+    title: "Plastic-Free Lagos 2026",
+    kicker: "Clean-ups & recycling",
+    image: IMG.beachCleanup,
+    summary: "Fund 24 community clean-ups and 20 new school eco-clubs, and remove 120 tonnes of plastic from Lagos waters.",
+    story: [
+      "Lagos floods faster each year — and blocked drains full of plastic are a big part of why.",
+      "This campaign funds equipment, transport, waste audits and the eco-clubs that turn students into the city’s next generation of climate leaders.",
+    ],
+    raised: 23_900_000,
+    goal: 30_000_000,
+    donors: 1_208,
+    deadline: "2026-12-31",
+    programme: "plastic-free-lagos",
+    site: "lekki-coastal-restoration",
+    budget: [
+      { label: "Clean-up equipment & transport", amount: 11_000_000 },
+      { label: "School eco-clubs", amount: 9_000_000 },
+      { label: "Waste audits & reporting", amount: 6_000_000 },
+      { label: "Admin", amount: 4_000_000 },
+    ],
+    updates: [
+      { date: "2026-10-18", title: "Takwa Bay clean-up: 4.2 tonnes", body: "312 volunteers, 18 companies and one very tired boat crew." },
+    ],
+    recentDonors: [
+      { name: "Lekki Rotaract", amount: 150_000, when: "3 hrs ago" },
+      { name: "Bisi F.", amount: 10_000, when: "today" },
+    ],
+    suggested: [10_000, 50_000, 250_000],
+  },
+];
+
+export const getCampaign = (slug: string) => campaigns.find((c) => c.slug === slug);

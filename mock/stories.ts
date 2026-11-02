@@ -1,0 +1,101 @@
+import type { Story } from "@/lib/types";
+import { IMG } from "./images";
+
+export const stories: Story[] = [
+  {
+    slug: "the-women-who-grow-the-wall",
+    title: "The women who grow the wall",
+    excerpt: "In Auyo, 46 nursery groups raise 300,000 seedlings a year — and earn more than ever before.",
+    category: "Community voices",
+    date: "2026-10-09",
+    readMins: 6,
+    author: "Zainab Abdullahi",
+    image: IMG.seedlingPots,
+    body: [
+      "At 5:30 every morning, before the heat arrives, Hajiya Rabi Musa walks the rows of her nursery in Auyo with a watering can in each hand. Ten years ago this patch of ground was bare. Today it holds 18,000 seedlings — acacia, baobab, neem and moringa — destined for the Hadejia Green Belt.",
+      "Rabi leads one of 46 women’s nursery groups we work with in Jigawa. Each group is paid per surviving seedling, not per seedling raised, which means quality matters. ‘We treat them like children,’ she laughs. ‘If they die, we don’t eat.’",
+      "The income has changed household decisions. Groups have used profits to buy grinding machines, pay school fees and start savings clubs. Several women now sit on their village development committees — a first.",
+      "This year the groups will raise 1.2 million seedlings for the One Million for the Wall appeal. Rabi’s target is 25,000. ‘We are not planting trees,’ she says. ‘We are planting the reason our children will stay.’",
+    ],
+    quote: { text: "We are not planting trees. We are planting the reason our children will stay.", by: "Hajiya Rabi Musa, nursery lead, Auyo" },
+  },
+  {
+    slug: "how-we-count-a-tree",
+    title: "How we count a tree (and why it matters)",
+    excerpt: "Planting numbers are easy to inflate. Here’s exactly how we measure — and verify — every tree.",
+    category: "Science",
+    date: "2026-09-18",
+    readMins: 8,
+    author: "Dr. Ifeoma Nnaji",
+    image: IMG.seedlingTray,
+    body: [
+      "Tree-planting has a credibility problem. Too many projects count seedlings handed out rather than trees that survive. At Green Canopy Trust we only count a tree once it is in the ground, geotagged and photographed.",
+      "Independent monitors return at 6, 12 and 24 months. Dead seedlings are replaced — but the replacement is not counted again. Our headline survival rate (78%) is the share of trees alive at 24 months.",
+      "Our CO₂ estimates are deliberately conservative: species-specific growth curves over 20 years, multiplied by measured survival. We do not sell carbon credits from our planting, and we tell corporate partners not to claim ‘net zero’ from tree donations alone.",
+      "Every year, an accredited third party audits a random 5% sample of plots, and we publish the full methodology alongside our annual report.",
+    ],
+  },
+  {
+    slug: "brass-creeks-fish-return",
+    title: "In Brass, the fish are coming back",
+    excerpt: "Three years after replanting began, fishers in restored creeks are landing 30% more.",
+    category: "Field notes",
+    date: "2026-08-27",
+    readMins: 5,
+    author: "Tamuno Briggs",
+    image: IMG.forestRiver,
+    body: [
+      "Pere Ebikeme has fished the creeks around Twon-Brass for 31 years. ‘After the spills, you could paddle all day and catch nothing,’ he says.",
+      "Since 2021, Pere has been one of 140 mangrove guardians paid to plant and protect red mangroves. The roots trap sediment, filter water and shelter juvenile fish.",
+      "Co-op landing records now show catches in restored creeks up 30% on 2021. Periwinkle harvesters report the same. ‘The mangrove is our bank,’ Pere says. ‘We are putting money back in.’",
+    ],
+    quote: { text: "The mangrove is our bank. We are putting money back in.", by: "Pere Ebikeme, mangrove guardian, Twon-Brass" },
+  },
+  {
+    slug: "takwa-bay-cleanup-report",
+    title: "Takwa Bay clean-up: 4.2 tonnes and a brand audit",
+    excerpt: "312 volunteers, 18 companies and what the plastic told us about who’s polluting Lagos.",
+    category: "News",
+    date: "2026-10-20",
+    readMins: 4,
+    author: "Seun Adebayo",
+    image: IMG.beachCleanupTeam,
+    body: [
+      "On Saturday 18 October, 312 volunteers removed 4.2 tonnes of waste from Takwa Bay in under four hours.",
+      "Every item was sorted by type and brand. Sachet water bags made up 41% of items by count; PET bottles 22%. We have shared the audit with LAWMA and the producers named.",
+      "PET collected was sold to a licensed recycler for ₦386,000 — which will fund two new school eco-clubs in Lagos Island.",
+    ],
+  },
+  {
+    slug: "cookstoves-hauwa",
+    title: "Hauwa’s kitchen, before and after",
+    excerpt: "A ₦25,000 stove gave one Kano mother back nine hours a week — and her son his breath.",
+    category: "Community voices",
+    date: "2026-07-30",
+    readMins: 4,
+    author: "Zainab Abdullahi",
+    image: IMG.campfire,
+    body: [
+      "Hauwa Sani used to spend three mornings a week walking to collect firewood. Smoke filled her kitchen; her son Abba coughed through every Harmattan.",
+      "Her new stove — built by artisans in Ungogo — uses half the wood and sends smoke out through a flue. ‘My kitchen is white again,’ she says, pointing at the walls.",
+      "Across 18,940 households, our stoves avoid an estimated 39,000 tonnes of CO₂ a year and keep thousands of trees standing.",
+    ],
+  },
+  {
+    slug: "acme-employee-planting-day",
+    title: "250 bankers, one green belt",
+    excerpt: "How a Lagos bank turned its sustainability report into an employee planting weekend in Jigawa.",
+    category: "Partners",
+    date: "2026-08-12",
+    readMins: 5,
+    author: "Temi Ogunleye",
+    image: IMG.manPlanting,
+    body: [
+      "When Meridian Trust Bank asked how to make its sustainability commitments tangible for staff, we suggested getting their hands dirty.",
+      "250 employees joined two planting weekends in the Hadejia Green Belt, planting 18,000 trees alongside nursery groups. Every tree is geotagged and appears in the bank’s co-branded impact dashboard.",
+      "‘Our people came back different,’ says the bank’s Head of Sustainability. ‘They now ask how every project affects the climate.’",
+    ],
+  },
+];
+
+export const getStory = (slug: string) => stories.find((s) => s.slug === slug);
